@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/productImage1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/defaultimage" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/productImage1"
+            android:maxLines="1"
+            android:text="Qty: "
+            android:textColor="@color/black"
+            android:textSize="13sp"
+         />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/productImage1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Trump returns to white Houseic week"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/linearDetailOrder"
+            android:weightSum="2"
+            android:layout_below="@+id/productName"
+            android:layout_toLeftOf="@id/productImage1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/productId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Mã"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/productPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Giá"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_below="@id/linearDetailOrder"
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@id/productImage1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Trump returns to white Houseic week"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            />
+
+        <View
+            android:id="@+id/dotLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/quantity"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:ems="1"
+            android:singleLine="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</LinearLayout>

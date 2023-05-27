@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    >
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_gravity="start"
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarMain"
+                android:title="Trang chủ"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="?attr/actionBarSize">
+                <androidx.appcompat.widget.SearchView
+                    android:backgroundTint="@color/white"
+                    android:textAppearance="@color/colorPrimary"
+                    app:searchIcon="@drawable/baseline_search_24"
+                    app:closeIcon="@drawable/baseline_close_24"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/searchview_cus"
+                    app:queryHint="Nhập sản phẩm cần tìm"
+                    app:iconifiedByDefault="false"
+                    android:id="@+id/searchViewHome"
+                    android:layout_width="220dp"
+                    android:layout_height="36dp">
+
+                </androidx.appcompat.widget.SearchView>
+            <LinearLayout
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize">
+                <FrameLayout
+                    android:id="@+id/framelayoutMain"
+                    android:layout_width="55dp"
+                    android:layout_height="?attr/actionBarSize">
+                    <com.nex3z.notificationbadge.NotificationBadge
+                        android:id="@+id/badge"
+                        android:layout_gravity="top|right"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <ImageView
+                        android:layout_marginTop="12dp"
+                        android:src="@drawable/baseline_shopping_cart_24"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/framelayoutProfile"
+                        android:layout_width="55dp"
+                        android:layout_height="?attr/actionBarSize">
+                        <ImageView
+                            android:layout_marginTop="12dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/baseline_notifications_none_24"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"/>
+                    </FrameLayout>
+            </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+            <ViewFlipper
+                android:id="@+id/viewFlipperMain"
+                android:layout_width="360dp"
+                android:layout_gravity="center"
+                android:background="@drawable/view_flipper_background"
+                android:layout_height="180dp">
+            </ViewFlipper>
+            <LinearLayout
+                android:background="@color/gray"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:textSize="24dp"
+                    android:text="Sản phảm mới nhất"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleViewMain"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            app:menu="@menu/menu_nav"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

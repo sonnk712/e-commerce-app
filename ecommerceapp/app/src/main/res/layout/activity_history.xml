@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HistoryActivity">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_gravity="start"
+        android:id="@+id/drawerLayoutHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarHistory"
+                android:title="Lịch sử mua hàng"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <FrameLayout
+                    android:id="@+id/framelayoutProfile"
+                    android:layout_gravity="right"
+                    android:layout_width="55dp"
+                    android:layout_height="?attr/actionBarSize">
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/baseline_account_circle_24"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/framelayoutMain"
+
+                    android:layout_gravity="right"
+                    android:layout_width="55dp"
+                    android:layout_height="?attr/actionBarSize">
+                    <com.nex3z.notificationbadge.NotificationBadge
+                        android:id="@+id/badge"
+                        android:layout_gravity="top|right"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"/>
+                    <ImageView
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/baseline_shopping_cart_24"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                </FrameLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/dotLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/white"
+                        android:ems="1"
+                        android:singleLine="true" />
+                    <TableRow>
+                        <TextView android:text="Mã"
+                            android:background="@drawable/border"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="35dp"/>
+                        <TextView android:text="Tổng giá"
+                            android:background="@drawable/border"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="96dp"/>
+                        <TextView android:text="Địa chỉ giao"
+                            android:background="@drawable/border"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="114dp"/>
+                        <TextView android:text="Ngày mua"
+                            android:background="@drawable/border"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="90dp"/>
+                        <TextView android:text="Trạng thái"
+                            android:background="@drawable/border"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:layout_width="72dp"/>
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewHistory"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navHistory"
+            app:menu="@menu/menu_nav"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

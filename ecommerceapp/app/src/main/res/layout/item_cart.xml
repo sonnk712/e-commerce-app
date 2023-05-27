@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="9"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/itemCartName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Trump returns to white House from vacation at the end of a catastrophic week"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:weightSum="18"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="6"
+                    android:id="@+id/itemCartPrice"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="1.000"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:layout_weight="2"
+                    android:id="@+id/itemCartSub"
+                    android:src="@drawable/baseline_remove_24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:id="@+id/itemCartQuantity"
+                    android:textSize="15sp"
+                    android:text="1"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_weight="2"
+                    android:id="@+id/itemCartAdd"
+
+                    android:src="@drawable/baseline_add_24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:gravity="center|center_vertical"
+                    android:layout_weight="6"
+                    android:id="@+id/itemCartTotalPrice"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:text="10.000"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cartItemImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_shopping_cart_24" />
+
+            <ImageView
+                android:id="@+id/removeItem"
+                android:src="@drawable/baseline_close_24"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Ecommerce Android App</string>
+    <string name="nav_home">Trang chủ</string>
+    <string name="nav_mobile">Mobile</string>
+    <string name="nav_laptop">Laptop</string>
+    <string name="nav_history">Lịch sử mua hàng</string>
+    <string name="nav_account">Người dùng</string>
+    <string name="nav_changepassword">Đổi mật khẩu</string>
+    <string name="nav_talk">Trò chuyện với chúng tôi</string>
+    <string name="nav_myprofile">Hồ sơ của tôi</string>
+    <string name="nav_drawer_open">Open Nav</string>
+    <string name="nav_drawer_close">Close Nav</string>
+    <string name="nav_signout">Đăng xuất</string>
+    <string name="nav_setting">Cài đặt</string>
+    <string name="nav_search">Tìm kiếm sản phẩm</string>
+    <string name="nav_info_company">Thông tin nhóm phát triển</string>
+    <string name="nav_about_us">Về chúng tôi</string>
+    <string name="nav_contact_us">Liên hệ</string>
+    <string name="nav_wish_list">Danh sách yêu thích</string>
+    <string name="app_version">1.2.0</string>
+    <string name="email_address">lttbdb@gmail.com</string>
+    <string name="copyright">Copyright &#169; 2022 PIES Developer \n All rights reserved</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_address">96A Trần Phú, P. Mộ Lao, Hà Đông, Hà Nội, Việt Nam</string>
+    <string name="phone_number">031 123 456</string>
+
+    <string-array name="category_item">
+        <item>Dell</item>
+        <item>Asus</item>
+        <item>Acer</item>
+        <item>MSI</item>
+        <item>Iphone</item>
+        <item>Samsung</item>
+        <item>Oppo</item>
+        <item>XiaoMi</item>
+    </string-array>
+</resources>

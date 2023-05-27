@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.OrderDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOrderDetail"
+        app:title="Thông tin chi tiết đơn hàng"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:padding="8dp"
+        android:id="@+id/linearLayoutOrderDetail"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOrderDetail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Mã đơn hàng"
+                android:textStyle="bold|italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtOrderDetailId"
+                android:text="1"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Tổng tiền"
+                android:textStyle="italic|bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtOrderDetaiLPrice"
+                android:text="250.000.000đ"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Địa chỉ giao hàng"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="italic|bold" />
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtOrderDetailAddress"
+                android:text="Hạ Mỗ, Đan Phượng, Hà Nội"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Trạng thái"
+                android:textStyle="italic|bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtOrderDetailStatus"
+                android:text="Đang giao hàng"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Ngày đặt hàng"
+                android:textStyle="italic|bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtCreatedDateOrderDetail"
+                android:text="07/12/2001"
+                android:textStyle="italic"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="12dp"
+        android:id="@+id/titleTable"
+        android:text="Sản phẩm đã đặt:"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutOrderDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewOrderDetail"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/titleTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

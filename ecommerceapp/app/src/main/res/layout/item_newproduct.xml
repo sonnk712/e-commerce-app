@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="20dp"
+    android:layout_width="160dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="18dp"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_new_product">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/newproduct_image"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <TextView
+                android:id="@+id/newproduct_name"
+                android:text="Lap top"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"/>
+
+            <TextView
+                android:id="@+id/newproduct_price"
+                android:text="200000 VND"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/addToCart"
+                    android:src="@drawable/baseline_add_shopping_cart_24"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <ImageView
+                    android:id="@+id/addToWishList"
+                    android:src="@drawable/baseline_favorite_border_24"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/new_icon"
+            android:layout_gravity="top|right"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splashImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/splashscreen" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/splashText"
+        android:layout_centerHorizontal="true"
+        app:lottie_fileName="loading.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:id="@+id/splashText"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Xin hãy chờ trong giây lát!"
+        android:layout_marginTop="600dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/home_icon_2"/>
+        <item android:id="@+id/nav_mobile"
+            android:title="@string/nav_mobile"
+            android:icon="@drawable/mobile_icon_2"/>
+        <item android:id="@+id/nav_laptop"
+            android:title="@string/nav_laptop"
+            android:icon="@drawable/laptop_icon_2"/>
+        <item android:id="@+id/nav_search"
+            android:title="@string/nav_search"
+            android:icon="@drawable/baseline_search_24_black"/>
+    </group>
+    <item android:title="@string/nav_account">
+        <menu>
+            <item android:id="@+id/nav_myprofile"
+                android:title="@string/nav_myprofile"
+                android:icon="@drawable/myprofile_icon"/>
+            <item android:id="@+id/nav_history"
+                android:title="@string/nav_history"
+                android:icon="@drawable/history_icon"/>
+            <item android:id="@+id/nav_wish_list"
+                android:title="@string/nav_wish_list"
+                android:icon="@drawable/baseline_favorite_border_24"/>
+            <item android:id="@+id/nav_talk"
+                android:title="@string/nav_talk"
+                android:icon="@drawable/talk_icon"/>
+            <item android:id="@+id/nav_signout"
+                android:title="@string/nav_signout"
+                android:icon="@drawable/signout_icon"/>
+        </menu>
+
+    </item>
+
+    <item android:title="@string/nav_info_company">
+        <menu>
+            <item android:id="@+id/nav_contact_us"
+                android:title="@string/nav_contact_us"
+                android:icon="@drawable/contact_info_icon"/>
+            <item android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us"
+                android:icon="@drawable/about_us_icon"/>
+        </menu>
+
+    </item>
+
+</menu>

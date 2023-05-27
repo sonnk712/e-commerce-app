@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TableLayout
+            android:paddingBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:text="Mã"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/txtOrderId"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="35dp"
+                    />
+                <TextView android:text="Tổng giá"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/txtOrderTotalPrice"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="96dp"
+                    />
+                <TextView android:text="Địa chỉ giao"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/txtOrderDelivery"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="114dp"
+                    />
+                <TextView android:text="Ngày mua"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/txtCreatedDate"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="90dp"
+                    />
+                <TextView android:text="Trạng thái"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/txtStatus"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="72dp" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

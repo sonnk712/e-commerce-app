@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_change_password_1"
+    >
+
+    <TextView
+        android:background="@drawable/bg_dialog_change_passoword"
+        android:text="Nhập địa chỉ giao hàng"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_change_password_1">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tvCountry"
+                    android:text="Chọn quốc gia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_below="@+id/tvCountry"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/tvCountryId"
+                        android:gravity="left"
+                        android:text="2"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                    <Spinner
+                        android:id="@+id/spCountry"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tvProvince"
+                    android:text="Chọn Tỉnh/Thành"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_below="@+id/tvProvince"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/tvProvinceId"
+                        android:gravity="left"
+                        android:text="1"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                    <Spinner
+                        android:id="@+id/spProvince"
+                        android:layout_weight="4"
+                        android:layout_below="@+id/tvProvince"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tvDistrict"
+                    android:text="Chọn Quận/Huyện"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_below="@+id/tvDistrict"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/tvDistrictId"
+                        android:gravity="left"
+                        android:text="1"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                    <Spinner
+                        android:id="@+id/spDistrict"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:id="@+id/tvWard"
+                    android:text="Chọn Phường/Xã"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_below="@+id/tvWard"
+                        android:weightSum="5"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <Spinner
+                        android:id="@+id/tvWardId"
+                        android:gravity="left"
+                        android:text="2123"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                        <Spinner
+                            android:id="@+id/spWard"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:padding="10dp"
+            android:id="@+id/detailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Nhập chi tiết địa chỉ (Số nhà/đường/cụm)"
+            android:textSize="15sp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/light_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnCancle"
+            android:background="@drawable/bg_button"
+            android:text="Hủy"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btnUpdatePassword"
+            android:background="@drawable/bg_button"
+            android:text="Xác nhận"
+            android:gravity="center"
+            android:layout_width="150dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
